@@ -1,0 +1,21 @@
+- **1.0.0** (3/30/2022)
+  - 1 draw call
+  - SDF Fonts
+  - Supports linear and gamma colorspace
+- Static API
+  - Call NimGui functions from any Unity Entities Systems/MonoBehaviours
+  - Static APIs can be called from Update/LateUpdate
+- Supports Builtin/Universal Render Pipeline
+- Supports Legacy Input Manager/Input System
+- Supported Widgets
+  - Box
+  - Label
+  - Line
+  - ProgressBar
+  - Button
+  - Dropdownpsible Area
+  - Dropdown
+  - Scroll Area
+  - Slider
+  - TextField
+  - Toggle

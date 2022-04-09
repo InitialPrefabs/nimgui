@@ -1,3 +1,18 @@
+- **1.0.1** (4/3/2022)
+    - Removes
+        - Removes deprecated `LoopUtils`, `RendererEventUtility` classes
+        - Removes deprecated CodeGen menu which is a duplicate of the StylesConfig save functionality
+    - Adds
+        - Adds a RenderPipeline Setup section for a 1 click fix for existing RenderPipeline Assets. 
+        All actions can be undone with Ctrl Z / Cmd Z
+        - Adds the prebuilt renderers into the Demo folder
+        - Caches the previous render pipeline and sets the prebuilt renderers directly when running the Demo scene.
+        - Adds a Show on Startup option to the Setup Window.
+    - Fixes
+        - Fixes log messages to be more obvious on what the error is.
+        - Fixes mismatch type definition for URP `ForwardRendererData` by wrapping it in `#if DEFINE`. 2021.2+ versions
+        will use the UniversalRendererData, while 2021.1 and under will remain with the type, `ForwardRendererData` 
+        for the Setup Wizard.
 - **1.0.0** (3/30/2022)
   - 1 draw call
   - SDF Fonts

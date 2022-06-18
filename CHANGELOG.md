@@ -1,3 +1,10 @@
+- **1.1.0** (6/18/2022)
+    - Adds
+        - Updates NimGui's dependency from Collections 1.2.3 to 1.3.1
+            - All instances of UnsafeHashMap are changed to UnsafeParallelHashMap.
+    - Fixes
+        - SetupWizardEditorWindow does not close and reopen the Setup Wizard if Show on Startup is true
+            - SetupWizardEditorWindow checks if there is any instance open instead of storing a static Window reference.
 - **1.0.1** (4/3/2022)
     - Removes
         - Removes deprecated `LoopUtils`, `RendererEventUtility` classes
@@ -14,23 +21,23 @@
         will use the UniversalRendererData, while 2021.1 and under will remain with the type, `ForwardRendererData` 
         for the Setup Wizard.
 - **1.0.0** (3/30/2022)
-  - 1 draw call
-  - SDF Fonts
-  - Supports linear and gamma colorspace
-- Static API
-  - Call NimGui functions from any Unity Entities Systems/MonoBehaviours
-  - Static APIs can be called from Update/LateUpdate
-- Supports Builtin/Universal Render Pipeline
-- Supports Legacy Input Manager/Input System
-- Supported Widgets
-  - Box
-  - Label
-  - Line
-  - ProgressBar
-  - Button
-  - Dropdownpsible Area
-  - Dropdown
-  - Scroll Area
-  - Slider
-  - TextField
-  - Toggle
+    - 1 draw call
+    - SDF Fonts
+    - Supports linear and gamma colorspace
+    - Static API
+        - Call NimGui functions from any Unity Entities Systems/MonoBehaviours
+        - Static APIs can be called from Update/LateUpdate
+    - Supports Builtin/Universal Render Pipeline
+    - Supports Legacy Input Manager/Input System
+    - Supported Widgets
+        - Box
+        - Label
+        - Line
+        - ProgressBar
+        - Button
+        - Dropdownpsible Area
+        - Dropdown
+        - Scroll Area
+        - Slider
+        - TextField
+        - Toggle

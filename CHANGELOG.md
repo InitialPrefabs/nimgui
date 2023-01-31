@@ -1,14 +1,22 @@
+- **1.2.0**
+    - Adds
+        - Table API allowing developers to format data in a grid like pattern.
+        - MenuBar API allowing developers to draw a top bar menu with dropdown options.
+        - Password field API that masks the text input with an * character for each input.
+    - Fixes
+        - Text layout to not break up words if the word exceeds the text area. This behaviour is similar to 
+        Unity's TextMeshPro where words will be moved to the next line if they cannot fit in the current line.
 - **1.1.0** (6/18/2022)
     - Adds
-        - Updates NimGui's dependency from Collections 1.2.3 to 1.3.1
+        - Updates NimGui's dependency from Collections 1.2.3 to 1.3.1.
             - All instances of UnsafeHashMap are changed to UnsafeParallelHashMap.
     - Fixes
-        - SetupWizardEditorWindow does not close and reopen the Setup Wizard if Show on Startup is true
+        - SetupWizardEditorWindow does not close and reopen the Setup Wizard if Show on Startup is true.
             - SetupWizardEditorWindow checks if there is any instance open instead of storing a static Window reference.
 - **1.0.1** (4/3/2022)
     - Removes
-        - Removes deprecated `LoopUtils`, `RendererEventUtility` classes
-        - Removes deprecated CodeGen menu which is a duplicate of the StylesConfig save functionality
+        - Removes deprecated `LoopUtils`, `RendererEventUtility` classes.
+        - Removes deprecated CodeGen menu which is a duplicate of the StylesConfig save functionality.
     - Adds
         - Adds a RenderPipeline Setup section for a 1 click fix for existing RenderPipeline Assets. 
         All actions can be undone with Ctrl Z / Cmd Z

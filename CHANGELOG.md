@@ -1,3 +1,31 @@
+- **1.3.0** (6/29/2025)
+    - Fixes
+        - Updates Burst dependency to 1.8.23 from 1.8.4
+        - Updates Collection dependency to 2.5.7 from 2.1.4
+        - Updates Mathematics dependency to 1.3.2 from 1.2.6
+        - Fixes crash on Domain/Scene reload
+            - Removes pointer chains in `ImUnmanagedWindow`
+            - Removes UnsafeList usage for small lists with fixed sized structs
+        - Fixes integer overflow by ensuring `ImUnmanagedWindow` is properly initialized
+    - Adds
+        - Adds support for SRP Render Graph
+        - Maintains legacy support for URP 16 and lower
+- **1.2.0** (5/23/2023)
+    - Updates package dependencies
+    - Adds
+        - PasswordField API to mask text input
+        - Table API to append cells
+        - MenuBar API to draw a menu bar and sub menus
+        - Removes usages of the `in` keyword for structs that are smaller than 8 bytes.
+        - Renames internal UnmanagedImWindow variable to Unmanaged to reduce the redundancy
+        - Adds Stack and Queue like functionality to UnsafeList as extension methods
+        - Adds an internal scope debugger to visualize the widgets and their actual text space
+        - Updates dependencies to match Entities 1.0.8.
+    - Fixes
+        - Text layout engine from cutting characters off and slicing characters
+        - Known Issues
+        - Regenerating the glyphs with a font may produce sideways fonts
+        - MenuBars can be added multiple times, but will break. You should only add the menu bar once!
 - **1.1.0** (6/18/2022)
     - Adds
         - Updates NimGui's dependency from Collections 1.2.3 to 1.3.1
